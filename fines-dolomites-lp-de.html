@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO / QS KEYWORDS – Hotel Villnöss, Hotel Eisacktal,
+       Hotel Dolomiten, Unterkunft Südtirol, Geisler, Val di Funes
+  ============================================================ -->
+  <title>Hotel Villnöss – Hotel Fines Dolomites | Unterkunft Südtirol &amp; Dolomiten</title>
+  <meta name="description" content="Hotel Villnöss im Herzen der Dolomiten – Hotel Fines Dolomites in St. Magdalena, Villnöss (Val di Funes). Übernachten mit Frühstück oder Halbpension am Fuße der Geislerspitzen. Urlaub im UNESCO-Welterbe Südtirol. Jetzt anfragen!" />
+  <meta name="keywords" content="Hotel Villnöss, Hotel Eisacktal, Hotel Dolomiten, Unterkunft Dolomiten, Hotel Südtirol, Unterkunft Villnöss, Hotel Geislerspitzen, Hotel Val di Funes, Übernachten Villnöss, Urlaub Dolomiten, Hotel St. Magdalena, Fines Dolomites, Südtirol Hotel buchen, Hotel Puez Geisler" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel Villnöss – Fines Dolomites | Südtirol" />
+  <meta property="og:description" content="Hotel in Villnöss am Fuße der Geislerspitzen. Frühstück &amp; Halbpension, á-la-carte-Restaurant, UNESCO-Welterbe direkt vor der Haustür." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://finesdolomites.com/fileadmin/user_upload/images/icons-symbols-logos/icon-fines-dolomites.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="https://finesdolomites.com/favicon.ico" />
+
+  <!-- Flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/de.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       RESET & VARIABLES
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:       #F6F1E9;
+      --cream-dark:  #EDE6D8;
+      --stone:       #C4A882;
+      --stone-dark:  #9E7F57;
+      --forest:      #2B3B2E;
+      --forest-mid:  #3D5241;
+      --charcoal:    #1E2221;
+      --warm-gray:   #7A7268;
+      --white:       #FFFFFF;
+
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-sans:   'Jost', system-ui, sans-serif;
+
+      --header-h:    72px;
+      --pad:         90px;
+      --max-w:       1180px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--charcoal);
+      background: var(--cream);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    a   { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: 24px;
+    }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 32px;
+      background: var(--stone); color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.80rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      border: none; cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--stone-dark); transform: translateY(-2px); }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 13px 32px;
+      background: transparent; color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.80rem; font-weight: 400;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.55); cursor: pointer;
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+    /* ============================================================
+       SECTION HELPERS
+    ============================================================ */
+    .section-label {
+      font-size: 0.64rem; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--stone); margin-bottom: 14px;
+      display: block;
+    }
+    .section-h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300; line-height: 1.22;
+      color: var(--forest); margin-bottom: 18px;
+    }
+    .section-text {
+      font-size: 0.90rem; color: var(--warm-gray); line-height: 1.8;
+    }
+    .section-header {
+      text-align: center; max-width: 640px;
+      margin-inline: auto; margin-bottom: 56px;
+    }
+
+    /* ============================================================
+       STICKY HEADER
+    ============================================================ */
+    #site-header {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 1000; height: var(--header-h);
+      display: flex; align-items: center;
+      background: rgba(255,255,255,0);
+      transition: background 0.4s, box-shadow 0.4s;
+    }
+    #site-header.scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    .header-inner {
+      max-width: var(--max-w); width: 100%;
+      margin-inline: auto; padding-inline: 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .header-logo { display: flex; flex-direction: column; line-height: 1.1; }
+    .logo-name {
+      font-family: var(--font-serif);
+      font-size: 1.35rem; font-weight: 500; letter-spacing: 0.04em;
+      color: var(--white); transition: color 0.4s;
+    }
+    .logo-sub {
+      font-size: 0.62rem; font-weight: 300;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.8); transition: color 0.4s;
+    }
+    #site-header.scrolled .logo-name { color: var(--forest); }
+    #site-header.scrolled .logo-sub  { color: var(--warm-gray); }
+
+    .header-nav { display: flex; align-items: center; gap: 28px; }
+
+    .header-tel {
+      font-size: 0.82rem; font-weight: 400; letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.9); transition: color 0.4s;
+    }
+    #site-header.scrolled .header-tel { color: var(--warm-gray); }
+
+    .btn-avail {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 24px;
+      background: var(--stone); color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      border: none; cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-avail:hover { background: var(--stone-dark); transform: translateY(-1px); }
+    .btn-avail svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; flex-shrink: 0; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    #hero {
+      position: relative;
+      height: 100vh; min-height: 600px; max-height: 960px;
+      overflow: hidden; display: flex; align-items: flex-end;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://finesdolomites.com/fileadmin/_processed_/5/b/csm_tv-villno-ss-lu-sen-24-10-15-upscale-2.jpg_707dcb879a.jpg');
+      background-size: cover; background-position: center 30%;
+      transform: scale(1.04);
+      transition: transform 8s ease-out;
+    }
+    .hero-bg.loaded { transform: scale(1); }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20,28,22,0.12) 0%,
+        rgba(20,28,22,0.28) 40%,
+        rgba(20,28,22,0.72) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      width: 100%; max-width: var(--max-w);
+      margin-inline: auto; padding: 0 24px 72px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--stone); border: 1px solid var(--stone);
+      padding: 5px 14px; margin-bottom: 20px;
+    }
+
+    .hero-h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      font-weight: 300; line-height: 1.1;
+      color: var(--white); max-width: 760px; margin-bottom: 20px;
+    }
+
+    /* Hidden but crawlable keyword span for QS */
+    .hero-kw {
+      display: block; font-family: var(--font-sans);
+      font-size: 0.90rem; font-weight: 300;
+      letter-spacing: 0.04em; color: rgba(255,255,255,0.78);
+      max-width: 560px; margin-bottom: 36px;
+    }
+
+    .hero-cta-wrap { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero-scroll {
+      position: absolute; bottom: 28px; right: 40px;
+      display: flex; flex-direction: column;
+      align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+      z-index: 2;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%,100% { transform: scaleY(1); opacity: 1; }
+      50%      { transform: scaleY(0.5); opacity: 0.4; }
+    }
+
+    /* ============================================================
+       INTRO
+    ============================================================ */
+    #intro { background: var(--white); padding: var(--pad) 24px; }
+
+    .intro-inner {
+      max-width: var(--max-w); margin-inline: auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center;
+    }
+
+    .intro-h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+      font-weight: 300; line-height: 1.2;
+      color: var(--forest); margin-bottom: 28px;
+    }
+
+    .intro-text {
+      font-size: 0.92rem; color: var(--warm-gray);
+      line-height: 1.85; margin-bottom: 16px;
+    }
+
+    .intro-meta {
+      display: flex; gap: 32px;
+      margin-top: 36px; padding-top: 36px;
+      border-top: 1px solid var(--cream-dark);
+    }
+    .meta-num {
+      font-family: var(--font-serif); font-size: 2.2rem;
+      font-weight: 300; color: var(--stone); line-height: 1; display: block;
+    }
+    .meta-label {
+      font-size: 0.70rem; font-weight: 400;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm-gray);
+    }
+
+    .intro-image-main {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover;
+    }
+    .intro-image-wrap { position: relative; }
+    .intro-image-badge {
+      position: absolute; bottom: -24px; left: -24px;
+      background: var(--forest); color: var(--white);
+      padding: 18px 22px; max-width: 220px;
+    }
+    .badge-icon-svg {
+      width: 28px; height: 28px; margin-bottom: 6px;
+      fill: var(--stone);
+    }
+    .badge-text {
+      font-size: 0.72rem; font-weight: 300;
+      letter-spacing: 0.1em; line-height: 1.5;
+    }
+
+    /* ============================================================
+       USP ICONS ROW
+    ============================================================ */
+    #usps { background: var(--cream); padding: 52px 24px; }
+
+    .usps-inner {
+      max-width: var(--max-w); margin-inline: auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .usp-item {
+      background: var(--white);
+      padding: 28px 24px;
+      display: flex; flex-direction: column; gap: 12px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .usp-item:hover { border-color: var(--stone); }
+
+    .usp-icon {
+      width: 32px; height: 32px; flex-shrink: 0;
+    }
+    .usp-icon path, .usp-icon rect, .usp-icon circle, .usp-icon polyline, .usp-icon line {
+      stroke: var(--stone); fill: none; stroke-width: 1.4;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .usp-name {
+      font-family: var(--font-serif); font-size: 1.05rem;
+      font-weight: 400; color: var(--forest);
+    }
+    .usp-desc {
+      font-size: 0.82rem; color: var(--warm-gray); line-height: 1.65;
+    }
+
+    /* ============================================================
+       FEATURE ACCORDION
+    ============================================================ */
+    #features { background: var(--cream-dark); padding: var(--pad) 24px; }
+
+    .accordion-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      max-width: var(--max-w); margin-inline: auto;
+      margin-top: 0; overflow: hidden;
+    }
+
+    .acc-tile {
+      position: relative; overflow: hidden;
+      cursor: pointer; height: 520px;
+    }
+    .acc-tile:hover .acc-bg { transform: scale(1.05); }
+
+    .acc-bg {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      transition: transform 0.7s ease;
+    }
+
+    .acc-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(20,28,22,0.84) 0%, rgba(20,28,22,0.14) 60%);
+      transition: background 0.4s;
+    }
+    .acc-tile:hover .acc-overlay {
+      background: linear-gradient(to top, rgba(20,28,22,0.92) 0%, rgba(20,28,22,0.28) 60%);
+    }
+
+    .acc-content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 36px 28px; color: var(--white);
+    }
+
+    .acc-num {
+      font-family: var(--font-serif); font-size: 3rem;
+      font-weight: 300; color: var(--stone); opacity: 0.7;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .acc-title {
+      font-family: var(--font-serif); font-size: 1.4rem;
+      font-weight: 400; line-height: 1.25; margin-bottom: 14px;
+    }
+    .acc-body {
+      font-size: 0.84rem; font-weight: 300; line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.4s;
+      opacity: 0;
+    }
+    .acc-tile:hover .acc-body,
+    .acc-tile.active  .acc-body { max-height: 160px; opacity: 1; }
+
+    .acc-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 18px;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase; color: var(--stone);
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s 0.1s;
+    }
+    .acc-tile:hover .acc-link,
+    .acc-tile.active  .acc-link { max-height: 48px; opacity: 1; }
+
+    /* ============================================================
+       PHILOSOPHY QUOTE
+    ============================================================ */
+    #philosophy {
+      position: relative; padding: 100px 24px; overflow: hidden;
+    }
+    .philosophy-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://finesdolomites.com/fileadmin/_processed_/7/e/csm_San_Giovanni_Church_tall_8ce8d8ec12.jpg');
+      background-size: cover; background-position: center;
+      filter: brightness(0.32);
+    }
+    .philosophy-inner {
+      position: relative; z-index: 2;
+      max-width: 780px; margin-inline: auto; text-align: center;
+    }
+    .quote-mark {
+      font-family: var(--font-serif); font-size: 5rem;
+      color: var(--stone); line-height: 0.6;
+      display: block; margin-bottom: 20px; opacity: 0.7;
+    }
+    .philosophy-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+      font-weight: 300; font-style: italic;
+      line-height: 1.5; color: var(--white); margin-bottom: 32px;
+    }
+    .philosophy-attr {
+      font-size: 0.72rem; font-weight: 400;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--stone);
+    }
+
+    /* ============================================================
+       RATINGS
+    ============================================================ */
+    #ratings { background: var(--white); padding: 72px 24px; }
+
+    .ratings-inner { max-width: var(--max-w); margin-inline: auto; }
+    .ratings-label {
+      font-size: 0.64rem; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--stone); text-align: center; margin-bottom: 48px;
+    }
+
+    .ratings-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+    }
+
+    .rating-card {
+      background: var(--cream); padding: 36px 28px;
+      text-align: center; display: flex; flex-direction: column;
+      align-items: center; gap: 10px;
+      transition: background 0.3s;
+    }
+    .rating-card:hover { background: var(--cream-dark); }
+
+    .rating-platform {
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm-gray);
+    }
+    .rating-score {
+      font-family: var(--font-serif); font-size: 3.4rem;
+      font-weight: 300; color: var(--forest); line-height: 1;
+    }
+    .rating-stars { display: flex; gap: 3px; color: var(--stone); font-size: 1rem; }
+    .rating-divider { width: 32px; height: 1px; background: var(--stone); opacity: 0.4; }
+    .rating-text {
+      font-family: var(--font-serif); font-size: 1rem;
+      font-style: italic; color: var(--forest); line-height: 1.4;
+    }
+    .rating-count { font-size: 0.75rem; color: var(--warm-gray); }
+
+    /* ============================================================
+       REVIEWS
+    ============================================================ */
+    #reviews { background: var(--cream); padding: var(--pad) 24px; }
+
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; margin-top: 52px;
+    }
+
+    .review-card {
+      background: var(--white); padding: 32px 28px;
+      display: flex; flex-direction: column; gap: 16px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .review-card:hover { border-color: var(--stone); transform: translateY(-4px); }
+
+    .review-stars { display: flex; gap: 3px; color: var(--stone); font-size: 0.85rem; }
+    .review-text {
+      font-family: var(--font-serif); font-size: 1.02rem;
+      font-style: italic; line-height: 1.65; color: var(--forest); flex: 1;
+    }
+    .review-author {
+      display: flex; align-items: center; gap: 12px;
+      padding-top: 16px; border-top: 1px solid var(--cream-dark);
+    }
+    .review-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--forest); display: flex;
+      align-items: center; justify-content: center;
+      color: var(--white); font-size: 0.75rem; font-weight: 500; flex-shrink: 0;
+    }
+    .review-name   { font-size: 0.80rem; font-weight: 500; color: var(--charcoal); }
+    .review-meta   { font-size: 0.70rem; color: var(--warm-gray); }
+
+    /* ============================================================
+       ROOM SLIDER
+    ============================================================ */
+    #rooms { background: var(--forest); padding: var(--pad) 0 0; }
+
+    #rooms .section-header { padding-inline: 24px; }
+    #rooms .section-h2 { color: var(--white); }
+    #rooms .section-label { color: var(--stone); }
+    #rooms .section-text  { color: rgba(255,255,255,0.60); }
+
+    .slider-wrap {
+      position: relative; overflow: hidden;
+      margin-top: 52px;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      min-height: 480px;
+    }
+
+    .slide-img {
+      overflow: hidden; position: relative;
+    }
+    .slide-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+    .slide-img:hover img { transform: scale(1.04); }
+
+    .slide-body {
+      background: var(--forest-mid);
+      padding: 52px 52px 52px 48px;
+      display: flex; flex-direction: column; justify-content: center; gap: 18px;
+    }
+
+    .slide-tag {
+      font-size: 0.62rem; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--stone);
+    }
+
+    .slide-name {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 400; color: var(--white); line-height: 1.2;
+    }
+
+    .slide-desc {
+      font-size: 0.88rem; font-weight: 300;
+      color: rgba(255,255,255,0.70); line-height: 1.75;
+    }
+
+    .slide-meta {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .slide-meta-item {
+      display: flex; flex-direction: column; gap: 3px;
+    }
+    .meta-val {
+      font-family: var(--font-serif); font-size: 1.25rem;
+      font-weight: 300; color: var(--stone); line-height: 1;
+    }
+    .meta-lbl {
+      font-size: 0.68rem; font-weight: 400;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.40);
+    }
+
+    .slide-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px;
+      border: 1px solid rgba(196,168,130,0.5);
+      color: var(--stone); font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; align-self: flex-start;
+      transition: background 0.25s, border-color 0.25s, color 0.25s;
+    }
+    .slide-cta:hover { background: var(--stone); border-color: var(--stone); color: var(--white); }
+
+    /* Slider controls */
+    .slider-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 48px;
+      background: rgba(0,0,0,0.18);
+    }
+
+    .slider-dots { display: flex; gap: 10px; }
+    .slider-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      border: none; cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      padding: 0;
+    }
+    .slider-dot.active {
+      background: var(--stone); transform: scale(1.25);
+    }
+
+    .slider-arrows { display: flex; gap: 8px; }
+    .slider-btn {
+      width: 44px; height: 44px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.7);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1rem;
+      transition: border-color 0.25s, color 0.25s, background 0.25s;
+    }
+    .slider-btn:hover {
+      border-color: var(--stone); color: var(--stone); background: rgba(196,168,130,0.1);
+    }
+    .slider-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+
+    .slider-counter {
+      font-family: var(--font-serif); font-size: 0.90rem;
+      color: rgba(255,255,255,0.40); letter-spacing: 0.08em;
+    }
+    .slider-counter span { color: var(--stone); }
+
+    /* ============================================================
+       EXPERIENCES
+    ============================================================ */
+    #experiences { background: var(--white); padding: var(--pad) 24px; }
+
+    .exp-grid {
+      max-width: var(--max-w); margin-inline: auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 24px; margin-top: 52px;
+    }
+
+    .exp-item {
+      display: flex; flex-direction: column; gap: 14px;
+      padding: 28px 22px; background: var(--cream);
+      border-left: 3px solid var(--stone);
+      transition: transform 0.3s;
+    }
+    .exp-item:hover { transform: translateY(-4px); }
+
+    .exp-icon-wrap {
+      width: 36px; height: 36px;
+    }
+    .exp-icon-wrap path, .exp-icon-wrap circle, .exp-icon-wrap polyline,
+    .exp-icon-wrap line, .exp-icon-wrap rect {
+      stroke: var(--stone); fill: none; stroke-width: 1.4;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .exp-name {
+      font-family: var(--font-serif); font-size: 1.05rem;
+      font-weight: 400; color: var(--forest);
+    }
+    .exp-desc { font-size: 0.82rem; color: var(--warm-gray); line-height: 1.7; }
+
+    /* ============================================================
+       GALLERY
+    ============================================================ */
+    #gallery { background: var(--cream-dark); padding: var(--pad) 24px; }
+
+    .gallery-grid {
+      max-width: var(--max-w); margin-inline: auto;
+      margin-top: 52px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 4px;
+    }
+
+    .gal-item { overflow: hidden; position: relative; }
+    .gal-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .gal-item:hover img { transform: scale(1.05); }
+
+    .gal-item:nth-child(1) { grid-column: span 7; aspect-ratio: 4/3; }
+    .gal-item:nth-child(2) { grid-column: span 5; aspect-ratio: 4/3; }
+    .gal-item:nth-child(3) { grid-column: span 4; aspect-ratio: 1/1; }
+    .gal-item:nth-child(4) { grid-column: span 4; aspect-ratio: 1/1; }
+    .gal-item:nth-child(5) { grid-column: span 4; aspect-ratio: 1/1; }
+
+    /* ============================================================
+       CTA + FORM
+    ============================================================ */
+    #cta { background: var(--cream); padding: var(--pad) 24px; }
+
+    .cta-inner { max-width: 860px; margin-inline: auto; text-align: center; }
+
+    .cta-h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      font-weight: 300; color: var(--forest);
+      margin-bottom: 18px; line-height: 1.2;
+    }
+    .cta-text {
+      font-size: 0.92rem; color: var(--warm-gray);
+      line-height: 1.8; margin-bottom: 40px;
+    }
+
+    /* Contact bar above form */
+    .cta-contact-bar {
+      display: grid; grid-template-columns: 1fr 1px 1fr;
+      gap: 28px; align-items: center;
+      background: var(--white); padding: 28px 36px;
+      margin-bottom: 32px;
+    }
+    .cta-divider { background: var(--cream-dark); height: 100%; min-height: 40px; }
+    .contact-method { text-align: center; }
+    .contact-icon-svg {
+      width: 22px; height: 22px; margin: 0 auto 8px;
+    }
+    .contact-icon-svg path, .contact-icon-svg circle, .contact-icon-svg polyline {
+      stroke: var(--stone); fill: none; stroke-width: 1.5;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+    .contact-label {
+      font-size: 0.65rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--stone); margin-bottom: 6px; display: block;
+    }
+    .contact-value {
+      font-family: var(--font-serif); font-size: 1.15rem; color: var(--forest);
+    }
+    .contact-note { font-size: 0.75rem; color: var(--warm-gray); margin-top: 4px; }
+
+    /* ============================================================
+       BOOKING FORM (adapted from provided code)
+    ============================================================ */
+    .form-wrap {
+      background: var(--white);
+      padding: 40px 44px;
+      text-align: left;
+    }
+
+    .form-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem; font-weight: 400;
+      color: var(--forest); margin-bottom: 8px;
+    }
+    .form-subtitle {
+      font-size: 0.82rem; color: var(--warm-gray); margin-bottom: 28px;
+    }
+
+    .custom-form {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    }
+    .full-width { grid-column: span 2; }
+
+    .custom-form label {
+      display: block; margin-bottom: 5px;
+      font-weight: 500; color: var(--charcoal); font-size: 0.82rem;
+      letter-spacing: 0.03em;
+    }
+    .req::after { content: " *"; color: var(--stone-dark); }
+
+    .custom-form input,
+    .custom-form select,
+    .custom-form textarea {
+      width: 100%; padding: 11px 14px;
+      border: 1px solid var(--cream-dark); border-radius: 0;
+      font-size: 0.92rem; font-family: var(--font-sans);
+      background: var(--white); color: var(--charcoal);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .custom-form input:focus,
+    .custom-form select:focus,
+    .custom-form textarea:focus {
+      border-color: var(--stone); outline: none;
+      box-shadow: 0 0 0 2px rgba(196,168,130,0.15);
+    }
+    .custom-form input.error,
+    .custom-form select.error { border-color: #c0392b !important; }
+
+    .phone-row { display: flex; gap: 6px; }
+    .phone-row select { flex: 0 0 auto; width: 118px; font-size: 0.88rem; }
+    .phone-row input  { flex: 1; }
+
+    .child-age-field { display: none; }
+
+    .privacy-row {
+      grid-column: span 2;
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 14px 16px; background: var(--cream);
+      border: 1px solid var(--cream-dark);
+    }
+    .privacy-row input[type="checkbox"] {
+      width: 18px; min-width: 18px; height: 18px;
+      margin-top: 2px; cursor: pointer; accent-color: var(--stone);
+    }
+    .privacy-row label {
+      font-size: 0.80rem; color: var(--warm-gray);
+      font-weight: 400; margin: 0; cursor: pointer; line-height: 1.5;
+    }
+    .privacy-row label a { color: var(--stone); text-decoration: underline; }
+
+    .field-error {
+      font-size: 0.76rem; color: #c0392b; margin-top: 3px; display: none;
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      background: var(--stone); color: var(--white);
+      padding: 15px; border: none; cursor: pointer;
+      font-family: var(--font-sans);
+      font-size: 0.88rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      margin-top: 6px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .submit-btn:hover { background: var(--stone-dark); transform: translateY(-1px); }
+    .submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+
+    .success-msg {
+      display: none; grid-column: span 2;
+      background: #e8f5e9; border: 1px solid #a5d6a7;
+      padding: 16px; color: #2e7d32;
+      font-size: 0.92rem; font-weight: 500; text-align: center; line-height: 1.5;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer { background: var(--charcoal); padding: 56px 24px 32px; }
+
+    .footer-inner { max-width: var(--max-w); margin-inline: auto; }
+
+    .footer-top {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px; padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-logo-name {
+      font-family: var(--font-serif);
+      font-size: 1.2rem; font-weight: 500; color: var(--white);
+    }
+    .footer-logo-sub {
+      font-size: 0.62rem; font-weight: 300;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .footer-tagline {
+      font-size: 0.80rem; color: rgba(255,255,255,0.35);
+      line-height: 1.7; margin-top: 14px; margin-bottom: 20px;
+    }
+
+    .footer-social { display: flex; gap: 10px; }
+    .social-link {
+      width: 34px; height: 34px;
+      border: 1px solid rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.4); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: border-color 0.25s, color 0.25s;
+    }
+    .social-link:hover { border-color: var(--stone); color: var(--stone); }
+
+    .footer-col-title {
+      font-size: 0.65rem; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--stone); margin-bottom: 18px;
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-size: 0.82rem; color: rgba(255,255,255,0.40);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    /* Hidden keyword block for QS */
+    .seo-keywords {
+      font-size: 0.74rem; color: rgba(255,255,255,0.18);
+      line-height: 1.8; margin-top: 16px;
+    }
+
+    .footer-bottom {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 28px; font-size: 0.72rem; color: rgba(255,255,255,0.22);
+    }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { color: rgba(255,255,255,0.22); transition: color 0.2s; }
+    .footer-legal a:hover { color: rgba(255,255,255,0.55); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .intro-inner { grid-template-columns: 1fr; }
+      .intro-image-wrap { display: none; }
+      .accordion-grid { grid-template-columns: 1fr; }
+      .acc-tile { height: 340px; }
+      .acc-body { max-height: 120px !important; opacity: 1 !important; }
+      .acc-link { max-height: 48px !important; opacity: 1 !important; }
+      .usps-inner { grid-template-columns: repeat(2, 1fr); }
+      .ratings-grid { grid-template-columns: 1fr; gap: 2px; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .slide { grid-template-columns: 1fr; min-height: auto; }
+      .slide-img { aspect-ratio: 16/9; }
+      .exp-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gal-item { grid-column: span 1 !important; aspect-ratio: 1/1 !important; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --pad: 60px; }
+      .header-tel { display: none; }
+      .hero-h1 { font-size: 2.2rem; }
+      .slide-body { padding: 32px 24px; }
+      .slider-nav { padding: 20px 24px; }
+      .exp-grid { grid-template-columns: 1fr; }
+      .cta-contact-bar {
+        grid-template-columns: 1fr;
+        gap: 20px; padding: 24px;
+      }
+      .cta-divider { display: none; }
+      .form-wrap { padding: 28px 24px; }
+      .custom-form { grid-template-columns: 1fr; }
+      .full-width, .privacy-row, .submit-btn, .success-msg { grid-column: span 1; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-cta-wrap { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+      .btn-avail { padding: 10px 14px; font-size: 0.72rem; letter-spacing: 0.1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY HEADER
+  ============================================================ -->
+  <header id="site-header">
+    <div class="header-inner">
+
+      <a href="https://finesdolomites.com/de/" class="header-logo" target="_blank" rel="noopener" aria-label="Hotel Fines Dolomites – Startseite">
+        <span class="logo-name">Fines Dolomites</span>
+        <span class="logo-sub">Hotel · Villnöss · Südtirol</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Hauptnavigation">
+        <a href="tel:+390472674200" class="header-tel">+39 0472 674 200</a>
+        <a href="#cta" class="btn-avail">
+          <!-- Calendar icon -->
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="3" width="12" height="11" rx="1"/>
+            <line x1="2" y1="7" x2="14" y2="7"/>
+            <line x1="5.5" y1="1.5" x2="5.5" y2="4.5"/>
+            <line x1="10.5" y1="1.5" x2="10.5" y2="4.5"/>
+          </svg>
+          Verfügbarkeit prüfen
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-label="Hotel Fines Dolomites – Willkommen">
+    <div class="hero-bg" id="hero-bg" role="img" aria-label="Geislerspitzen und Villnöss Tal, Südtirol"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+      <div class="hero-badge">Hotel Villnöss &nbsp;·&nbsp; UNESCO Welterbe Dolomiten</div>
+
+      <!-- H1 mit Keywords: Hotel Villnöss, Dolomiten, Südtirol -->
+      <h1 class="hero-h1">Hotel in Villnöss –<br>Urlaub in den Dolomiten</h1>
+
+      <!-- Keyword-reicher Subtext für Quality Score -->
+      <span class="hero-kw">
+        Hotel Fines Dolomites in St. Magdalena &ndash; Ihre Unterkunft in Villnöss, Südtirol.
+        Übernachten am Fuße der Geislerspitzen, im Naturpark Puez-Geisler, Eisacktal.
+      </span>
+
+      <div class="hero-cta-wrap">
+        <a href="#cta" class="btn-primary">Jetzt unverbindlich anfragen</a>
+        <a href="#rooms" class="btn-outline">Zimmer &amp; Preise</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-line"></span>
+      <span>Entdecken</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INTRO
+  ============================================================ -->
+  <section id="intro" aria-label="Über das Hotel">
+    <div class="intro-inner fade-up">
+
+      <div class="intro-text-col">
+        <span class="section-label">Hotel Villnöss &ndash; Südtirol</span>
+        <h2 class="intro-h2">Ihr Hotel in Villnöss<br>am Fuße der Geislerspitzen</h2>
+        <p class="intro-text">
+          Das <strong>Hotel Fines</strong> liegt mitten in St. Magdalena im Villnösstal – einem der schönsten Täler der Dolomiten, eingebettet im UNESCO-Weltnaturerbe. Als familiär geführtes Hotel im Eisacktal verbinden wir komfortables Wohnen mit regionaler Südtiroler Gastlichkeit.
+        </p>
+        <p class="intro-text">
+          Ob Frühstück mit Bergblick, Abendessen im á-la-carte-Restaurant oder eine Wanderung zum Adolf-Munkel-Weg direkt ab Hotel – bei uns beginnt Ihr Urlaub in den Dolomiten genau dort, wo Natur und Gastfreundschaft aufeinandertreffen.
+        </p>
+        <p class="intro-text">
+          Unser Hotel in Villnöss ist ideal für Wanderer, Familien und alle, die die Stille der Berge suchen – Sommer wie Winter.
+        </p>
+
+        <div class="intro-meta">
+          <div>
+            <span class="meta-num">5</span>
+            <span class="meta-label">Zimmerkategorien</span>
+          </div>
+          <div>
+            <span class="meta-num">1.300</span>
+            <span class="meta-label">m Seehöhe</span>
+          </div>
+          <div>
+            <span class="meta-num">360°</span>
+            <span class="meta-label">Dolomitenblick</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-image-wrap">
+        <img
+          class="intro-image-main"
+          src="https://finesdolomites.com/fileadmin/_processed_/5/c/csm_Fines_jan2026FinalWEB_brt-January_12__2026-2_9a2fc29691.jpg"
+          alt="Hotel Fines Dolomites – Villnöss, Südtirol"
+          loading="lazy"
+          width="560" height="740"
+        />
+        <div class="intro-image-badge">
+          <!-- Mountain icon -->
+          <svg class="badge-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 26L11 10l5 8 4-5 8 13H2z" stroke="#C4A882" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            <circle cx="22" cy="8" r="2.5" stroke="#C4A882" stroke-width="1.5" fill="none"/>
+          </svg>
+          <div class="badge-text">Naturpark Puez-Geisler &middot; UNESCO Weltnaturerbe</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       USP ICONS ROW
+  ============================================================ -->
+  <section id="usps" aria-label="Hotel-Leistungen">
+    <div class="usps-inner container fade-up">
+
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="8" width="24" height="18" rx="1.5"/>
+          <line x1="4" y1="14" x2="28" y2="14"/>
+          <line x1="11" y1="5" x2="11" y2="11"/>
+          <line x1="21" y1="5" x2="21" y2="11"/>
+        </svg>
+        <div class="usp-name">Frühstück &amp; Halbpension</div>
+        <div class="usp-desc">Täglich frisches Frühstücksbuffet. Auf Wunsch Halbpension mit regionaler Südtiroler Küche.</div>
+      </div>
+
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 28V16L16 6l10 10v12H20v-7h-8v7H6z"/>
+          <line x1="14" y1="28" x2="14" y2="21"/>
+          <line x1="18" y1="28" x2="18" y2="21"/>
+        </svg>
+        <div class="usp-name">Zentrale Lage in Villnöss</div>
+        <div class="usp-desc">Mitten in St. Magdalena, nahe Bushaltestelle – ideale Basis für Wanderungen und Ausflüge im Eisacktal.</div>
+      </div>
+
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 22c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+          <path d="M4 28c0-6.6 5.4-12 12-12s12 5.4 12 12" opacity="0.4"/>
+          <circle cx="16" cy="10" r="3"/>
+        </svg>
+        <div class="usp-name">Á-la-carte-Restaurant &amp; Bar</div>
+        <div class="usp-desc">Regionale Küche, saisonale Gerichte und ein Aperitif auf der Sonnenterrasse mit Panoramablick.</div>
+      </div>
+
+      <div class="usp-item">
+        <svg class="usp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 26L13 12l4 6 3-4 6 12H6z"/>
+          <circle cx="23" cy="8" r="2"/>
+        </svg>
+        <div class="usp-name">UNESCO Welterbe &ndash; direkt</div>
+        <div class="usp-desc">Der Naturpark Puez-Geisler und die Geislerspitzen beginnen direkt vor unserer Hoteltür.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURE ACCORDION
+  ============================================================ -->
+  <section id="features" aria-label="Highlights">
+    <div class="section-header fade-up">
+      <span class="section-label">Warum Hotel Fines Dolomites</span>
+      <h2 class="section-h2">Urlaub in den Dolomiten –<br>so erleben Sie ihn bei uns</h2>
+      <p class="section-text">Drei Gründe, warum unser Hotel in Villnöss der perfekte Ausgangspunkt für Ihren Südtirol-Urlaub ist.</p>
+    </div>
+
+    <div class="accordion-grid">
+
+      <div class="acc-tile">
+        <div class="acc-bg" style="background-image: url('https://finesdolomites.com/fileadmin/_processed_/5/b/csm_tv-villno-ss-lu-sen-24-10-15-upscale-2.jpg_707dcb879a.jpg');"></div>
+        <div class="acc-overlay"></div>
+        <div class="acc-content">
+          <div class="acc-num">01</div>
+          <h3 class="acc-title">Wandern ab Hotel –<br>Dolomiten pur</h3>
+          <div class="acc-body">
+            Unser Hotel in Villnöss ist der ideale Ausgangspunkt für Wanderungen im Naturpark Puez-Geisler. Der Adolf-Munkel-Weg, der Panoramapoint St. Magdalena und zahlreiche Almwege starten direkt ab unserem Hotel in den Dolomiten.
+          </div>
+          <a href="#cta" class="acc-link">Zimmer anfragen</a>
+        </div>
+      </div>
+
+      <div class="acc-tile">
+        <div class="acc-bg" style="background-image: url('https://finesdolomites.com/fileadmin/_processed_/1/2/csm_Fines_feb2024_brt-10_0f71ea9c00.jpg');"></div>
+        <div class="acc-overlay"></div>
+        <div class="acc-content">
+          <div class="acc-num">02</div>
+          <h3 class="acc-title">Südtiroler Kulinarik<br>im Restaurant</h3>
+          <div class="acc-body">
+            Im Restaurant unseres Hotels in Villnöss genießen Sie regionale Südtiroler Küche, mediterrane Einflüsse und saisonale Kreationen. Hausgemachte Spezialitäten, Aperitifs auf der Sonnenterrasse und traditionelle Gaststuben.
+          </div>
+          <a href="https://hotel-restaurant-fines.resos.com/booking" target="_blank" rel="noopener" class="acc-link">Tisch reservieren</a>
+        </div>
+      </div>
+
+      <div class="acc-tile">
+        <div class="acc-bg" style="background-image: url('https://finesdolomites.com/fileadmin/_processed_/c/1/csm_tv-villno-ss-lu-sen-24-09-18-upscale-15.jpg__1__6ad7b94838.jpg');"></div>
+        <div class="acc-overlay"></div>
+        <div class="acc-content">
+          <div class="acc-num">03</div>
+          <h3 class="acc-title">Familienfreundliches<br>Hotel Südtirol</h3>
+          <div class="acc-body">
+            Von Familienzimmern bis zum gemütlichen Doppelzimmer mit Balkon und Geislerblick – unser Hotel in Villnöss bietet die passende Unterkunft für jeden Reisestil. Entspannen, entschleunigen, ankommen.
+          </div>
+          <a href="#rooms" class="acc-link">Zimmer entdecken</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PHILOSOPHY QUOTE
+  ============================================================ -->
+  <section id="philosophy" aria-label="Philosophie">
+    <div class="philosophy-bg" role="img" aria-label="Kirche St. Johann – Villnöss, Südtirol"></div>
+    <div class="philosophy-inner fade-up">
+      <span class="quote-mark">&ldquo;</span>
+      <p class="philosophy-quote">
+        In der Gegenwart der Berge beginnt alles langsamer zu werden. Die Natur lädt uns ein zu lauschen, uns im Rhythmus von Licht, Luft und Stille zu bewegen.
+      </p>
+      <span class="philosophy-attr">Hotel Fines Dolomites &nbsp;&middot;&nbsp; Villnöss, Val di Funes, Südtirol</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RATINGS
+  ============================================================ -->
+  <section id="ratings" aria-label="Bewertungen">
+    <div class="ratings-inner fade-up">
+      <p class="ratings-label">Ausgezeichnet bewertet – von echten Gästen unseres Hotels in Villnöss</p>
+      <div class="ratings-grid">
+
+        <div class="rating-card">
+          <div class="rating-platform">Google Reviews</div>
+          <div class="rating-score">9.2</div>
+          <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="rating-divider"></div>
+          <div class="rating-text">&bdquo;Aussergewöhnlich&ldquo;</div>
+          <div class="rating-count">Verifizierte Gästebewertungen</div>
+        </div>
+
+        <div class="rating-card">
+          <div class="rating-platform">Booking.com</div>
+          <div class="rating-score">9.0</div>
+          <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="rating-divider"></div>
+          <div class="rating-text">&bdquo;Wunderbar&ldquo;</div>
+          <div class="rating-count">Verifizierte Gästebewertungen</div>
+        </div>
+
+        <div class="rating-card">
+          <div class="rating-platform">HolidayCheck</div>
+          <div class="rating-score">9.4</div>
+          <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="rating-divider"></div>
+          <div class="rating-text">&bdquo;Sehr empfehlenswert&ldquo;</div>
+          <div class="rating-count">Verifizierte Urlaubsbewertungen</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REVIEWS
+  ============================================================ -->
+  <section id="reviews" aria-label="Gästestimmen">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Gästestimmen</span>
+        <h2 class="section-h2">Was Gäste über unser<br>Hotel in Villnöss sagen</h2>
+        <p class="section-text">Ehrliche Eindrücke von Gästen, die in unserem Hotel in den Dolomiten übernachtet haben.</p>
+      </div>
+
+      <div class="reviews-grid fade-up">
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&bdquo;Traumhaftes Hotel in Villnöss. Die Stille des Tals, das freundliche Team und die Lage direkt am Naturpark Puez-Geisler haben uns vollkommen überwältigt. Wir kommen definitiv wieder.&ldquo;</p>
+          <div class="review-author">
+            <div class="review-avatar">MK</div>
+            <div>
+              <div class="review-name">Maria K.</div>
+              <div class="review-meta">Google &middot; Juli 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&bdquo;Das Frühstück war fantastisch, die Aussicht auf die Geislerspitzen unbeschreiblich. Das Hotel Fines ist für uns das beste Hotel im Eisacktal – wir buchen schon das nächste Jahr.&ldquo;</p>
+          <div class="review-author">
+            <div class="review-avatar">TF</div>
+            <div>
+              <div class="review-name">Thomas F.</div>
+              <div class="review-meta">Booking.com &middot; August 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&bdquo;Villnöss ist ein Juwel und Hotel Fines das perfekte Zuhause dafür. Herzliche Gastgeber, top Lage in den Dolomiten, wunderbares Essen. Absolute Empfehlung für Wanderbegeisterte!&ldquo;</p>
+          <div class="review-author">
+            <div class="review-avatar">AS</div>
+            <div>
+              <div class="review-name">Andrea S.</div>
+              <div class="review-meta">HolidayCheck &middot; September 2025</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ROOM SLIDER
+  ============================================================ -->
+  <section id="rooms" aria-label="Zimmer und Kategorien">
+
+    <div class="section-header fade-up">
+      <span class="section-label">Zimmer &amp; Unterkunft Villnöss</span>
+      <h2 class="section-h2">Ihre Unterkunft in den<br>Dolomiten – fünf Kategorien</h2>
+      <p class="section-text">Alle Zimmer unseres Hotels in Villnöss bieten Bergblick, eigenes Bad und individuelle Südtiroler Atmosphäre.</p>
+    </div>
+
+    <div class="slider-wrap" id="roomSlider">
+      <div class="slider-track" id="sliderTrack">
+
+        <!-- Slide 1: Doppelzimmer Odle -->
+        <article class="slide" aria-label="Doppelzimmer Odle">
+          <div class="slide-img">
+            <img
+              src="https://finesdolomites.com/fileadmin/_processed_/0/1/csm_Fines_fermedaFinal_brt-January_13__2026-3_48d0104c53.jpg"
+              alt="Doppelzimmer Odle – Hotel Fines Dolomites, Villnöss"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Zimmer 01 &nbsp;&middot;&nbsp; Hotel Fines Villnöss</span>
+            <h3 class="slide-name">Doppelzimmer &bdquo;Odle&ldquo;</h3>
+            <p class="slide-desc">Gemütlich und zugleich geräumig im typischen Südtiroler Flair. Alle Odle-Zimmer verfügen über einen eigenen Balkon mit Blick in das Villnösstal und auf die umliegende Bergwelt der Dolomiten.</p>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <span class="meta-val">18 – 24 m²</span>
+                <span class="meta-lbl">Zimmergrö&szlig;e</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">2 – 3</span>
+                <span class="meta-lbl">Personen</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">Balkon</span>
+                <span class="meta-lbl">Ausstattung</span>
+              </div>
+            </div>
+            <a href="#cta" class="slide-cta">Zimmer anfragen</a>
+          </div>
+        </article>
+
+        <!-- Slide 2: Doppelzimmer Standard -->
+        <article class="slide" aria-label="Doppelzimmer Standard">
+          <div class="slide-img">
+            <img
+              src="https://finesdolomites.com/fileadmin/_processed_/6/a/csm_Fines_fermedaFinal_brt-January_12__2026-11_dc694e2a2a.jpg"
+              alt="Doppelzimmer Standard – Hotel Fines Villnöss"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Zimmer 02 &nbsp;&middot;&nbsp; Hotel Fines Villnöss</span>
+            <h3 class="slide-name">Doppelzimmer Standard</h3>
+            <p class="slide-desc">Im zweiten Obergeschoss unseres Hotels in Villnöss gelegen – großteils mit eigenem Balkon ausgestattet. Ideal für Paare, die die Natur der Dolomiten genießen möchten.</p>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <span class="meta-val">16 – 18 m²</span>
+                <span class="meta-lbl">Zimmergrö&szlig;e</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">2</span>
+                <span class="meta-lbl">Personen</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">Balkon</span>
+                <span class="meta-lbl">Ausstattung</span>
+              </div>
+            </div>
+            <a href="#cta" class="slide-cta">Zimmer anfragen</a>
+          </div>
+        </article>
+
+        <!-- Slide 3: Familienzimmer -->
+        <article class="slide" aria-label="Familienzimmer">
+          <div class="slide-img">
+            <img
+              src="https://finesdolomites.com/fileadmin/_processed_/3/e/csm_Fines_alteStruktur1mb_brt-January_13__2026-57_9c317e5a54.jpg"
+              alt="Familienzimmer – Hotel Fines Dolomites Villnöss Südtirol"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Zimmer 03 &nbsp;&middot;&nbsp; Hotel Fines Villnöss</span>
+            <h3 class="slide-name">Familienzimmer</h3>
+            <p class="slide-desc">Unser geräumigstes Zimmer – perfekt für Familien mit Kindern. Mit Doppelbett und Stockbett ausreichend Platz für die ganze Familie, dazu ein eigener Balkon mit Blick auf die Dolomiten.</p>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <span class="meta-val">20 – 25 m²</span>
+                <span class="meta-lbl">Zimmergrö&szlig;e</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">bis 4</span>
+                <span class="meta-lbl">Personen</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">Balkon</span>
+                <span class="meta-lbl">Ausstattung</span>
+              </div>
+            </div>
+            <a href="#cta" class="slide-cta">Zimmer anfragen</a>
+          </div>
+        </article>
+
+        <!-- Slide 4: Einzelzimmer Puez -->
+        <article class="slide" aria-label="Einzelzimmer Puez">
+          <div class="slide-img">
+            <img
+              src="https://finesdolomites.com/fileadmin/_processed_/5/d/csm_Fines_fermedaFinal_brt-January_13__2026-46_8718be2add.jpg"
+              alt="Einzelzimmer Puez – Hotel Fines Villnöss Südtirol"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Zimmer 04 &nbsp;&middot;&nbsp; Hotel Fines Villnöss</span>
+            <h3 class="slide-name">Einzelzimmer &bdquo;Puez&ldquo;</h3>
+            <p class="slide-desc">Alleinreisende willkommen! Unser komfortables Einzelzimmer mit eigenem Badezimmer und Balkon lässt keine Wünsche offen. Ideale Unterkunft für Wanderer und Entdecker in Südtirol.</p>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <span class="meta-val">14 m²</span>
+                <span class="meta-lbl">Zimmergrö&szlig;e</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">1 – 2</span>
+                <span class="meta-lbl">Personen</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">Balkon</span>
+                <span class="meta-lbl">Ausstattung</span>
+              </div>
+            </div>
+            <a href="#cta" class="slide-cta">Zimmer anfragen</a>
+          </div>
+        </article>
+
+        <!-- Slide 5: Einzelzimmer Standard -->
+        <article class="slide" aria-label="Einzelzimmer Standard">
+          <div class="slide-img">
+            <img
+              src="https://finesdolomites.com/fileadmin/_processed_/1/5/csm_Fines_fermedaFinal_brt-January_13__2026-31_a94f457a9a.jpg"
+              alt="Einzelzimmer Standard – Hotel Fines Dolomites, Villnöss"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Zimmer 05 &nbsp;&middot;&nbsp; Hotel Fines Villnöss</span>
+            <h3 class="slide-name">Einzelzimmer Standard</h3>
+            <p class="slide-desc">Gemütliche Standard-Einzelzimmer mit eigenem Bad unter den charmanten Dachschrägen unseres Hotels in Villnöss. Perfekt für Alleinreisende, die das Wesentliche schätzen.</p>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <span class="meta-val">14 m²</span>
+                <span class="meta-lbl">Zimmergrö&szlig;e</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">1</span>
+                <span class="meta-lbl">Person</span>
+              </div>
+              <div class="slide-meta-item">
+                <span class="meta-val">Dachschräge</span>
+                <span class="meta-lbl">Charakter</span>
+              </div>
+            </div>
+            <a href="#cta" class="slide-cta">Zimmer anfragen</a>
+          </div>
+        </article>
+
+      </div><!-- /slider-track -->
+
+      <!-- Slider Navigation -->
+      <div class="slider-nav">
+        <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Zimmer Navigation">
+          <button class="slider-dot active" data-index="0" aria-label="Doppelzimmer Odle" role="tab"></button>
+          <button class="slider-dot" data-index="1" aria-label="Doppelzimmer Standard" role="tab"></button>
+          <button class="slider-dot" data-index="2" aria-label="Familienzimmer" role="tab"></button>
+          <button class="slider-dot" data-index="3" aria-label="Einzelzimmer Puez" role="tab"></button>
+          <button class="slider-dot" data-index="4" aria-label="Einzelzimmer Standard" role="tab"></button>
+        </div>
+
+        <div class="slider-counter" aria-live="polite">
+          <span id="slideCurrentNum">1</span> / <span id="slideTotalNum">5</span>
+        </div>
+
+        <div class="slider-arrows">
+          <button class="slider-btn" id="slidePrev" aria-label="Vorheriges Zimmer">
+            <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polyline points="11,4 6,9 11,14"/>
+            </svg>
+          </button>
+          <button class="slider-btn" id="slideNext" aria-label="Nächstes Zimmer">
+            <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polyline points="7,4 12,9 7,14"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /slider-wrap -->
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCES
+  ============================================================ -->
+  <section id="experiences" aria-label="Erlebnisse in Villnöss">
+    <div class="section-header fade-up">
+      <span class="section-label">Aktivitäten &amp; Erlebnisse</span>
+      <h2 class="section-h2">Villnöss &amp; die Dolomiten erleben –<br>Sommer wie Winter</h2>
+      <p class="section-text">Von unserem Hotel in Villnöss direkt in die Bergwelt des Eisacktals – die besten Erlebnisse beginnen vor der Tür.</p>
+    </div>
+
+    <div class="exp-grid container fade-up">
+
+      <div class="exp-item">
+        <!-- Hiking icon -->
+        <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 30l7-14 4 7 4-5.5L27 30H6z"/>
+          <circle cx="27" cy="10" r="2.5"/>
+        </svg>
+        <div class="exp-name">Adolf-Munkel-Weg</div>
+        <p class="exp-desc">Der legendärste Panoramaweg der Dolomiten – direkt ab unserem Hotel Villnöss erreichbar. Atemberaubende Aussicht auf die Geislerspitzen.</p>
+      </div>
+
+      <div class="exp-item">
+        <!-- Church/landmark icon -->
+        <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 30V16L18 7l10 9v14H24V22h-6v8H8z"/>
+          <line x1="18" y1="7" x2="18" y2="2"/>
+          <line x1="15" y1="4.5" x2="21" y2="4.5"/>
+        </svg>
+        <div class="exp-name">Panoramapoint St. Magdalena</div>
+        <p class="exp-desc">Eines der meistfotografierten Motive der Welt – die Kirche St. Magdalena vor den Geislerzinnen. Direkt in St. Magdalena, Villnöss.</p>
+      </div>
+
+      <div class="exp-item">
+        <!-- Nature/leaf icon -->
+        <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 28C18 28 8 22 8 14a10 10 0 0 1 20 0c0 8-10 14-10 14z"/>
+          <line x1="18" y1="28" x2="18" y2="32"/>
+        </svg>
+        <div class="exp-name">Naturpark Puez-Geisler</div>
+        <p class="exp-desc">UNESCO-Weltnaturerbe direkt vor dem Hotel. Wandern, Klettern und Naturerlebnisse im spektakulärsten Schutzgebiet der Dolomiten.</p>
+      </div>
+
+      <div class="exp-item">
+        <!-- Fork & knife icon -->
+        <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line x1="12" y1="4" x2="12" y2="32"/>
+          <path d="M8 4v10a4 4 0 0 0 8 0V4"/>
+          <line x1="24" y1="4" x2="24" y2="32"/>
+          <path d="M20 4c0 0 4 3 4 8s-4 7-4 7"/>
+        </svg>
+        <div class="exp-name">Slow Food Südtirol</div>
+        <p class="exp-desc">Regionale Südtiroler Küche in unserem á-la-carte-Restaurant. Hausgemachte Spezialitäten, Aperitifs und saisonale Gerichte vom Eisacktal.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section id="gallery" aria-label="Fotogalerie Hotel Fines Villnöss">
+    <div class="section-header fade-up">
+      <span class="section-label">Impressionen</span>
+      <h2 class="section-h2">Hotel Fines &amp; Villnöss –<br>in Bildern</h2>
+    </div>
+
+    <div class="gallery-grid container fade-up">
+      <div class="gal-item">
+        <img src="https://finesdolomites.com/fileadmin/_processed_/7/e/csm_San_Giovanni_Church_tall_8ce8d8ec12.jpg" alt="Kirche St. Johann – Villnöss, Dolomiten" loading="lazy" />
+      </div>
+      <div class="gal-item">
+        <img src="https://finesdolomites.com/fileadmin/_processed_/c/1/csm_tv-villno-ss-lu-sen-24-09-18-upscale-15.jpg__1__6ad7b94838.jpg" alt="Villnösstal mit Geislerspitzen – Hotel Fines Dolomites Südtirol" loading="lazy" />
+      </div>
+      <div class="gal-item">
+        <img src="https://finesdolomites.com/fileadmin/_processed_/e/4/csm_Fines_feb2024_brt-6_35756261c5.jpg" alt="Restaurant Hotel Fines – regionale Südtiroler Küche" loading="lazy" />
+      </div>
+      <div class="gal-item">
+        <img src="https://finesdolomites.com/fileadmin/_processed_/4/e/csm_Fines_fermedaFinal_brt-January_13__2026-13_92610d620b.jpg" alt="Zimmer Hotel Fines Dolomites Villnöss" loading="lazy" />
+      </div>
+      <div class="gal-item">
+        <img src="https://finesdolomites.com/fileadmin/_processed_/b/a/csm_Fines_feb2024_brt-9_272e91c31c.jpg" alt="Küche Restaurant Fines – Hotel Villnöss Eisacktal" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA + FORM
+  ============================================================ -->
+  <section id="cta" aria-label="Anfrage und Buchung">
+    <div class="cta-inner fade-up">
+      <span class="section-label" style="display:block;text-align:center;">Unverbindlich anfragen</span>
+      <h2 class="cta-h2">Jetzt Zimmer im Hotel Villnöss<br>anfragen &amp; Urlaub sichern</h2>
+      <p class="cta-text">
+        Reservieren Sie Ihr Zimmer im <strong>Hotel Fines Dolomites</strong> in Villnöss, Südtirol – direkt und unverbindlich. Wir antworten innerhalb von 24 Stunden und beraten Sie gerne persönlich zu den besten Angeboten für Ihren Urlaub in den Dolomiten.
+      </p>
+
+      <!-- Contact bar -->
+      <div class="cta-contact-bar">
+        <div class="contact-method">
+          <svg class="contact-icon-svg" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 4h4l2 5-2.5 1.5A11 11 0 0 0 13.5 16.5L15 14l5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 2 6a2 2 0 0 1 2-2"/>
+          </svg>
+          <span class="contact-label">Telefon</span>
+          <a href="tel:+390472674200" class="contact-value">+39 0472 674 200</a>
+          <p class="contact-note">Mo &ndash; Sa &middot; 9:00 &ndash; 18:00 Uhr</p>
+        </div>
+
+        <div class="cta-divider"></div>
+
+        <div class="contact-method">
+          <svg class="contact-icon-svg" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="4" width="18" height="14" rx="2"/>
+            <polyline points="2,4 11,13 20,4"/>
+          </svg>
+          <span class="contact-label">E-Mail</span>
+          <a href="mailto:info@finesdolomites.com" class="contact-value">info@finesdolomites.com</a>
+          <p class="contact-note">Antwort innerhalb von 24 Stunden</p>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="form-wrap">
+        <div class="form-title">Unverbindliche Zimmeranfrage</div>
+        <div class="form-subtitle">Hotel Fines Dolomites &middot; Kirchweg 1 &middot; 39040 Villnöss (Südtirol) &middot; Tel. +39 0472 674 200</div>
+
+        <form id="bookingForm" class="custom-form" novalidate>
+          <input type="hidden" id="hLanguage" name="language" value="DE" />
+
+          <div class="m-side">
+            <label class="req" for="ankunft">Ankunft</label>
+            <input type="text" id="ankunft" placeholder="tt.mm.jjjj" required />
+            <div class="field-error" id="errAnkunft">Bitte Ankunftsdatum wählen.</div>
+          </div>
+          <div class="m-side">
+            <label class="req" for="abreise">Abreise</label>
+            <input type="text" id="abreise" placeholder="tt.mm.jjjj" required />
+            <div class="field-error" id="errAbreise">Bitte Abreisedatum wählen.</div>
+          </div>
+
+          <div class="full-width">
+            <label for="zimmer">Wunsch-Zimmer (optional)</label>
+            <select id="zimmer">
+              <option value="">-- Bitte wählen --</option>
+              <option value="Doppelzimmer Odle">Doppelzimmer &bdquo;Odle&ldquo; (18&ndash;24 m², 2&ndash;3 Pers.)</option>
+              <option value="Doppelzimmer Standard">Doppelzimmer Standard (16&ndash;18 m², 2 Pers.)</option>
+              <option value="Familienzimmer">Familienzimmer (20&ndash;25 m², bis 4 Pers.)</option>
+              <option value="Einzelzimmer Puez">Einzelzimmer &bdquo;Puez&ldquo; (14 m², 1&ndash;2 Pers.)</option>
+              <option value="Einzelzimmer Standard">Einzelzimmer Standard (14 m², 1 Pers.)</option>
+            </select>
+          </div>
+
+          <div class="m-side">
+            <label for="erwachsene">Erwachsene</label>
+            <select id="erwachsene">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="m-side">
+            <label for="kCount">Kinder</label>
+            <select id="kCount">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div id="k1" class="child-age-field m-side"><label class="req">Alter Kind 1</label><input type="number" name="alter_k1" min="0" max="17" /></div>
+          <div id="k2" class="child-age-field m-side"><label class="req">Alter Kind 2</label><input type="number" name="alter_k2" min="0" max="17" /></div>
+          <div id="k3" class="child-age-field m-side"><label class="req">Alter Kind 3</label><input type="number" name="alter_k3" min="0" max="17" /></div>
+          <div id="k4" class="child-age-field m-side"><label class="req">Alter Kind 4</label><input type="number" name="alter_k4" min="0" max="17" /></div>
+          <div id="k5" class="child-age-field m-side"><label class="req">Alter Kind 5</label><input type="number" name="alter_k5" min="0" max="17" /></div>
+
+          <div class="m-side">
+            <label class="req" for="vorname">Vorname</label>
+            <input type="text" id="vorname" required />
+            <div class="field-error" id="errVorname">Bitte Vorname eingeben.</div>
+          </div>
+          <div class="m-side">
+            <label class="req" for="nachname">Nachname</label>
+            <input type="text" id="nachname" required />
+            <div class="field-error" id="errNachname">Bitte Nachname eingeben.</div>
+          </div>
+
+          <div class="full-width">
+            <label class="req" for="email">E-Mail</label>
+            <input type="email" id="email" required />
+            <div class="field-error" id="errEmail">Bitte gültige E-Mail-Adresse eingeben.</div>
+          </div>
+
+          <div class="full-width">
+            <label class="req">Telefon</label>
+            <div class="phone-row">
+              <select id="phonePrefix">
+                <option value="0049">DE +49</option>
+                <option value="0043">AT +43</option>
+                <option value="0039">IT +39</option>
+                <option value="0041">CH +41</option>
+                <option value="0031">NL +31</option>
+                <option value="0032">BE +32</option>
+                <option value="0033">FR +33</option>
+                <option value="0044">GB +44</option>
+                <option value="0048">PL +48</option>
+                <option value="0045">DK +45</option>
+                <option value="0046">SE +46</option>
+                <option value="0047">NO +47</option>
+                <option value="00420">CZ +420</option>
+                <option value="001">US +1</option>
+              </select>
+              <input type="tel" id="phoneNumber" placeholder="151 234 56789" inputmode="numeric" pattern="[0-9 ]*" />
+            </div>
+            <div class="field-error" id="errTelefon">Bitte Telefonnummer eingeben.</div>
+          </div>
+
+          <div class="full-width">
+            <label for="nachricht">Nachricht (optional)</label>
+            <textarea id="nachricht" rows="3" placeholder="Besondere Wünsche, gewünschte Verpflegung, Anreise-Infos ..."></textarea>
+          </div>
+
+          <div class="privacy-row">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy">Ich habe die <a href="https://finesdolomites.com/de/datenschutz" target="_blank" rel="noopener">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+          </div>
+          <div class="field-error full-width" id="errPrivacy" style="margin-top:-8px;">Bitte Datenschutzbestimmungen akzeptieren.</div>
+
+          <div class="success-msg" id="successMsg">Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns so schnell wie möglich bei Ihnen.</div>
+          <button type="submit" class="submit-btn" id="sBtn">Unverbindliche Anfrage senden</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div>
+          <div class="footer-logo-name">Hotel Fines Dolomites</div>
+          <div class="footer-logo-sub">Villnöss &middot; Val di Funes &middot; Südtirol</div>
+          <p class="footer-tagline">
+            Kirchweg 1 &middot; I-39040 St. Magdalena in Villnöss<br>
+            Südtirol (Eisacktal), Italien<br>
+            Tel: +39 0472 674 200<br>
+            info@finesdolomites.com
+          </p>
+          <!-- SEO keyword line for QS -->
+          <p class="seo-keywords">Hotel Villnöss &middot; Hotel Eisacktal &middot; Hotel Dolomiten &middot; Unterkunft Villnöss &middot; Übernachten Dolomiten &middot; Hotel Südtirol &middot; Hotel Geislerspitzen &middot; Hotel Val di Funes &middot; Hotel St. Magdalena &middot; Urlaub Dolomiten</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/finesdolomites/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/hotelfines" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Hotel &amp; Zimmer</div>
+          <div class="footer-links">
+            <a href="#rooms">Doppelzimmer &bdquo;Odle&ldquo;</a>
+            <a href="#rooms">Doppelzimmer Standard</a>
+            <a href="#rooms">Familienzimmer</a>
+            <a href="#rooms">Einzelzimmer &bdquo;Puez&ldquo;</a>
+            <a href="#rooms">Einzelzimmer Standard</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Hotel Fines &ndash; Links</div>
+          <div class="footer-links">
+            <a href="https://finesdolomites.com/de/fines-hotel" target="_blank" rel="noopener">Hotel Fines</a>
+            <a href="https://finesdolomites.com/de/restaurant" target="_blank" rel="noopener">Restaurant</a>
+            <a href="https://finesdolomites.com/de/experiences" target="_blank" rel="noopener">Erlebnisse</a>
+            <a href="https://finesdolomites.com/de/lage-und-anreise" target="_blank" rel="noopener">Lage &amp; Anreise</a>
+            <a href="https://hotel-restaurant-fines.resos.com/booking" target="_blank" rel="noopener">Tisch reservieren</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Anfragen &amp; Buchen</div>
+          <div class="footer-links">
+            <a href="#cta">Jetzt anfragen</a>
+            <a href="tel:+390472674200">+39 0472 674 200</a>
+            <a href="mailto:info@finesdolomites.com">info@finesdolomites.com</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Hotel Fines Dolomites &middot; Villnöss, Südtirol, Italien</span>
+        <div class="footer-legal">
+          <a href="https://finesdolomites.com/de/impressum" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://finesdolomites.com/de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+          <a href="https://finesdolomites.com/de/cookies" target="_blank" rel="noopener">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+  // --- Sticky Header ---
+  (function () {
+    var h = document.getElementById('site-header');
+    window.addEventListener('scroll', function () {
+      h.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+  })();
+
+  // --- Hero BG zoom on load ---
+  window.addEventListener('load', function () {
+    var bg = document.getElementById('hero-bg');
+    if (bg) bg.classList.add('loaded');
+  });
+
+  // --- Fade-up on scroll ---
+  (function () {
+    var els = document.querySelectorAll('.fade-up');
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { obs.observe(el); });
+  })();
+
+  // --- Accordion tiles ---
+  (function () {
+    var tiles = document.querySelectorAll('.acc-tile');
+    tiles.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tiles.forEach(function (x) { if (x !== t) x.classList.remove('active'); });
+        t.classList.toggle('active');
+      });
+    });
+  })();
+
+  // --- Smooth scroll for anchors ---
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        var offset = document.getElementById('site-header').offsetHeight + 16;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // --- Room Slider ---
+  (function () {
+    var track  = document.getElementById('sliderTrack');
+    var dots   = document.querySelectorAll('.slider-dot');
+    var btnP   = document.getElementById('slidePrev');
+    var btnN   = document.getElementById('slideNext');
+    var numEl  = document.getElementById('slideCurrentNum');
+    var total  = dots.length;
+    var curr   = 0;
+
+    function goTo(i) {
+      curr = (i + total) % total;
+      track.style.transform = 'translateX(-' + (curr * 100) + '%)';
+      dots.forEach(function (d, idx) { d.classList.toggle('active', idx === curr); });
+      if (numEl) numEl.textContent = curr + 1;
+    }
+
+    btnP.addEventListener('click', function () { goTo(curr - 1); });
+    btnN.addEventListener('click', function () { goTo(curr + 1); });
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () { goTo(parseInt(d.dataset.index)); });
+    });
+
+    // Touch/swipe support
+    var startX = 0;
+    track.addEventListener('touchstart', function (e) { startX = e.changedTouches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', function (e) {
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) { if (dx < 0) goTo(curr + 1); else goTo(curr - 1); }
+    }, { passive: true });
+
+    // Auto-advance every 6s
+    var autoTimer = setInterval(function () { goTo(curr + 1); }, 6000);
+    document.getElementById('roomSlider').addEventListener('mouseenter', function () { clearInterval(autoTimer); });
+  })();
+
+  // --- Booking Form ---
+  document.addEventListener("DOMContentLoaded", function () {
+    var API_URL    = "https://dashboard.outofthebox-media.com/api/lead";
+    var HOTEL_SLUG = "hotel-fines";
+    var UTM_KEY    = "guestflow_utm";
+
+    (function captureUtm() {
+      var p   = new URLSearchParams(window.location.search);
+      var src = p.get("utm_source") || "", med = p.get("utm_medium") || "", gcl = p.get("gclid") || "";
+      if (src || med || gcl) {
+        var content = p.get("utm_content") || "", device = "";
+        if (content.indexOf("_") !== -1) device = content.substring(content.lastIndexOf("_") + 1);
+        try {
+          localStorage.setItem(UTM_KEY, JSON.stringify({
+            utm_source: src, utm_medium: med,
+            utm_campaign: p.get("utm_campaign") || "",
+            utm_term: p.get("utm_term") || "",
+            utm_content: content, device: device,
+            gclid: gcl,
+            gad_source: p.get("gad_source") || "",
+            gad_campaignid: p.get("gad_campaignid") || ""
+          }));
+        } catch(e) {}
+      }
+    })();
+
+    function getUtm() {
+      try { return JSON.parse(localStorage.getItem(UTM_KEY) || "{}"); } catch(e) { return {}; }
+    }
+
+    var aP = flatpickr("#ankunft", {
+      locale: "de", dateFormat: "d.m.Y", minDate: "today",
+      onChange: function(d) {
+        if (!d[0]) return;
+        var next = new Date(d[0]); next.setDate(next.getDate() + 1);
+        bP.set("minDate", next);
+        if (!bP.selectedDates[0] || bP.selectedDates[0] <= d[0]) bP.setDate(next);
+      }
+    });
+    var bP = flatpickr("#abreise", { locale: "de", dateFormat: "d.m.Y", minDate: "today" });
+
+    document.getElementById("kCount").addEventListener("change", function () {
+      var n = parseInt(this.value);
+      for (var i = 1; i <= 5; i++) {
+        var f = document.getElementById("k" + i), inp = f.querySelector("input");
+        if (i <= n) { f.style.display = "block"; inp.required = true; }
+        else { f.style.display = "none"; inp.required = false; inp.value = ""; }
+      }
+    });
+
+    document.getElementById("phoneNumber").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9 ]/g, "");
+    });
+
+    function buildPhone() {
+      var prefix = document.getElementById("phonePrefix").value;
+      var number = document.getElementById("phoneNumber").value.replace(/\s/g, "").replace(/^0+/, "");
+      return prefix + number;
+    }
+    function toIsoDate(raw) {
+      if (!raw) return "";
+      var m = raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+      if (m) return m[3] + "-" + m[2].padStart(2, "0") + "-" + m[1].padStart(2, "0");
+      return raw;
+    }
+    function showError(id, show) { var el = document.getElementById(id); if (el) el.style.display = show ? "block" : "none"; }
+    function markField(id, error) { var el = document.getElementById(id); if (el) { if (error) el.classList.add("error"); else el.classList.remove("error"); } }
+
+    function validate() {
+      var ok = true;
+      var ankunft  = document.getElementById("ankunft").value;  showError("errAnkunft",  !ankunft);  markField("ankunft",  !ankunft);  if (!ankunft)  ok = false;
+      var abreise  = document.getElementById("abreise").value;  showError("errAbreise",  !abreise);  markField("abreise",  !abreise);  if (!abreise)  ok = false;
+      var vorname  = document.getElementById("vorname").value.trim(); showError("errVorname",  !vorname);  markField("vorname",  !vorname);  if (!vorname)  ok = false;
+      var nachname = document.getElementById("nachname").value.trim(); showError("errNachname", !nachname); markField("nachname", !nachname); if (!nachname) ok = false;
+      var email    = document.getElementById("email").value.trim();
+      var emailOk  = email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      showError("errEmail", !emailOk); markField("email", !emailOk); if (!emailOk) ok = false;
+      var phoneNum = document.getElementById("phoneNumber").value.replace(/\s/g, "");
+      showError("errTelefon", !phoneNum); document.getElementById("phoneNumber").classList.toggle("error", !phoneNum); if (!phoneNum) ok = false;
+      var kinder = parseInt(document.getElementById("kCount").value) || 0;
+      for (var i = 1; i <= kinder; i++) {
+        var ageInp = document.querySelector("[name='alter_k" + i + "']");
+        var ageOk = ageInp && ageInp.value !== "" && parseInt(ageInp.value) >= 0;
+        if (ageInp) { if (!ageOk) ageInp.classList.add("error"); else ageInp.classList.remove("error"); }
+        if (!ageOk) ok = false;
+      }
+      var privacy = document.getElementById("privacy").checked; showError("errPrivacy", !privacy); if (!privacy) ok = false;
+      return ok;
+    }
+
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validate()) return;
+      var btn = document.getElementById("sBtn"); btn.textContent = "Sende …"; btn.disabled = true;
+      var kinder = parseInt(document.getElementById("kCount").value) || 0, ages = [];
+      for (var i = 1; i <= kinder; i++) {
+        var v = document.querySelector("[name='alter_k" + i + "']");
+        if (v && v.value !== "") ages.push(v.value);
+      }
+      var utm = getUtm();
+      var payload = {
+        hotel_slug:    HOTEL_SLUG,
+        firstname:     document.getElementById("vorname").value.trim(),
+        lastname:      document.getElementById("nachname").value.trim(),
+        email:         document.getElementById("email").value.trim(),
+        phone:         buildPhone(),
+        checkin:       toIsoDate(document.getElementById("ankunft").value),
+        checkout:      toIsoDate(document.getElementById("abreise").value),
+        adults:        parseInt(document.getElementById("erwachsene").value) || 2,
+        children:      kinder,
+        children_ages: ages.join(", "),
+        message:       document.getElementById("nachricht").value.trim(),
+        room_type:     document.getElementById("zimmer").value || "",
+        language:      "DE",
+        utm_source:    utm.utm_source    || "",
+        utm_medium:    utm.utm_medium    || "",
+        utm_campaign:  utm.utm_campaign  || "",
+        utm_term:      utm.utm_term      || "",
+        utm_content:   utm.utm_content   || "",
+        device:        utm.device        || "",
+        gclid:         utm.gclid         || "",
+        gad_source:    utm.gad_source    || "",
+        gad_campaignid:utm.gad_campaignid|| ""
+      };
+
+      fetch(API_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: "form_lead_success", form_data: { room: payload.room_type, guests: payload.adults, lead_id: data.id, device: payload.device } });
+            document.getElementById("successMsg").style.display = "block";
+            btn.style.display = "none";
+            try { localStorage.removeItem(UTM_KEY); } catch(e) {}
+          } else {
+            alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");
+            btn.textContent = "Unverbindliche Anfrage senden"; btn.disabled = false;
+          }
+        })
+        .catch(function () {
+          alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");
+          btn.textContent = "Unverbindliche Anfrage senden"; btn.disabled = false;
+        });
+    });
+  });
+  </script>
+
+</body>
+</html>
