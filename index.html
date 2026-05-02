@@ -77,11 +77,9 @@
     #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--header-h); display: flex; align-items: center; background: rgba(255,255,255,0); transition: background 0.4s, box-shadow 0.4s; }
     #site-header.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
     .header-inner { max-width: var(--max-w); width: 100%; margin-inline: auto; padding-inline: 24px; display: flex; align-items: center; justify-content: space-between; }
-    .header-logo { display: flex; flex-direction: column; line-height: 1.1; }
-    .logo-name { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; letter-spacing: 0.04em; color: var(--white); transition: color 0.4s; }
-    .logo-sub { font-size: 0.62rem; font-weight: 300; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.8); transition: color 0.4s; }
-    #site-header.scrolled .logo-name { color: var(--forest); }
-    #site-header.scrolled .logo-sub  { color: var(--warm-gray); }
+    .header-logo { display: flex; align-items: center; }
+    .logo-img { height: 46px; width: auto; display: block; object-fit: contain; filter: brightness(0) invert(1); transition: filter 0.4s; }
+    #site-header.scrolled .logo-img { filter: brightness(0); }
     .header-nav { display: flex; align-items: center; gap: 28px; }
     .header-tel { font-size: 0.82rem; font-weight: 400; letter-spacing: 0.04em; color: rgba(255,255,255,0.9); transition: color 0.4s; }
     #site-header.scrolled .header-tel { color: var(--warm-gray); }
@@ -343,8 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="site-header">
   <div class="header-inner">
     <a href="#hero" class="header-logo" aria-label="Hotel Fines Dolomites">
-      <span class="logo-name">Fines Dolomites</span>
-      <span class="logo-sub">Hotel &middot; Villnöss &middot; Südtirol</span>
+      <img class="logo-img" src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/logo.jpeg" alt="Hotel Fines Dolomites" />
     </a>
     <nav class="header-nav">
       <a href="tel:+390472674200" class="header-tel">+39 0472 674 200</a>
@@ -561,7 +558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <article class="slide">
-        <div class="slide-img"><img src="https://finesdolomites.com/fileadmin/_processed_/6/a/csm_Fines_fermedaFinal_brt-January_12__2026-11_dc694e2a2a.jpg" alt="Doppelzimmer Standard – Hotel Fines Villnöss" loading="lazy" /></div>
+        <div class="slide-img"><img src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/csm_Fines_fermedaFinal_brt-January_13__2026-31_4cbd24cad2.webp" alt="Doppelzimmer Standard – Hotel Fines Villnöss" loading="lazy" /></div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer 02 &middot; Hotel Fines Villnöss</span>
           <h3 class="slide-name">Doppelzimmer Standard</h3>
@@ -591,7 +588,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <article class="slide">
-        <div class="slide-img"><img src="https://finesdolomites.com/fileadmin/_processed_/5/d/csm_Fines_fermedaFinal_brt-January_13__2026-46_8718be2add.jpg" alt="Einzelzimmer Puez – Hotel Fines Villnöss" loading="lazy" /></div>
+        <div class="slide-img"><img src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/csm_Fines_fermedaFinal_brt-January_13__2026-14_2d7291b1e3.webp" alt="Einzelzimmer Puez – Hotel Fines Villnöss" loading="lazy" /></div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer 04 &middot; Hotel Fines Villnöss</span>
           <h3 class="slide-name">Einzelzimmer &bdquo;Puez&ldquo;</h3>
@@ -606,7 +603,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <article class="slide">
-        <div class="slide-img"><img src="https://finesdolomites.com/fileadmin/_processed_/1/5/csm_Fines_fermedaFinal_brt-January_13__2026-31_a94f457a9a.jpg" alt="Einzelzimmer Standard – Hotel Fines Villnöss" loading="lazy" /></div>
+        <div class="slide-img"><img src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/csm_Fines_fermedaFinal_brt-January_13__2026-46_173660addf.webp" alt="Einzelzimmer Standard – Hotel Fines Villnöss" loading="lazy" /></div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer 05 &middot; Hotel Fines Villnöss</span>
           <h3 class="slide-name">Einzelzimmer Standard</h3>
