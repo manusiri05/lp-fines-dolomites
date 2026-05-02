@@ -127,7 +127,7 @@
     .usp-desc { font-size: 0.82rem; color: var(--warm-gray); line-height: 1.65; }
 
     /* ── FEATURE ACCORDION ── */
-    #features { background: var(--cream-dark); padding: var(--pad) 24px; }
+    #restaurant { background: var(--cream-dark); padding: var(--pad) 24px; }
     .accordion-grid { display: grid; grid-template-columns: repeat(3, 1fr); max-width: var(--max-w); margin-inline: auto; overflow: hidden; }
     .acc-tile { position: relative; overflow: hidden; cursor: pointer; height: 520px; }
     .acc-tile:hover .acc-bg { transform: scale(1.05); }
@@ -151,7 +151,7 @@
     .philosophy-attr { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); }
 
     /* ── RATINGS ── */
-    #ratings { background: var(--white); padding: 72px 24px; }
+    #bewertungen { background: var(--white); padding: 72px 24px; }
     .ratings-inner { max-width: var(--max-w); margin-inline: auto; }
     .ratings-label { font-size: 0.64rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--stone); text-align: center; margin-bottom: 48px; }
     .ratings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
@@ -165,11 +165,11 @@
     .rating-count { font-size: 0.75rem; color: var(--warm-gray); }
 
     /* ── ROOM SLIDER ── */
-    #rooms { background: var(--forest); padding: var(--pad) 0 0; }
-    #rooms .section-header { padding-inline: 24px; }
-    #rooms .section-h2 { color: var(--white); }
-    #rooms .section-label { color: var(--stone); }
-    #rooms .section-text  { color: rgba(255,255,255,0.60); }
+    #zimmer { background: var(--forest); padding: var(--pad) 0 0; }
+    #zimmer .section-header { padding-inline: 24px; }
+    #zimmer .section-h2 { color: var(--white); }
+    #zimmer .section-label { color: var(--stone); }
+    #zimmer .section-text  { color: rgba(255,255,255,0.60); }
     .slider-wrap { position: relative; overflow: hidden; margin-top: 52px; }
     .slider-track { display: flex; transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
     .slide { flex: 0 0 100%; display: grid; grid-template-columns: 55% 45%; min-height: 480px; }
@@ -198,7 +198,7 @@
     .slider-counter span { color: var(--stone); }
 
     /* ── EXPERIENCES ── */
-    #experiences { background: var(--white); padding: var(--pad) 24px; }
+    #erlebnisse { background: var(--white); padding: var(--pad) 24px; }
     .exp-grid { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 52px; }
     .exp-item { display: flex; flex-direction: column; gap: 14px; padding: 28px 22px; background: var(--cream); border-left: 3px solid var(--stone); transition: transform 0.3s; }
     .exp-item:hover { transform: translateY(-4px); }
@@ -220,7 +220,7 @@
     .review-meta { font-size: 0.70rem; color: var(--warm-gray); }
 
     /* ── GALLERY ── */
-    #gallery { background: var(--cream-dark); padding: var(--pad) 24px; }
+    #impressionen { background: var(--cream-dark); padding: var(--pad) 24px; }
     .gallery-grid { max-width: var(--max-w); margin-inline: auto; margin-top: 52px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; }
     .gal-item { overflow: hidden; position: relative; }
     .gal-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
@@ -234,7 +234,7 @@
     .gal-item:nth-child(7) { grid-column: span 6; aspect-ratio: 16/9; }
 
     /* ── CTA + FORM ── */
-    #cta { background: var(--cream); padding: var(--pad) 24px; }
+    #anfrage { background: var(--cream); padding: var(--pad) 24px; }
     .cta-inner { max-width: 860px; margin-inline: auto; text-align: center; }
     .cta-h2 { font-family: var(--font-serif); font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 300; color: var(--forest); margin-bottom: 18px; line-height: 1.2; }
     .cta-text { font-size: 0.92rem; color: var(--warm-gray); line-height: 1.8; margin-bottom: 40px; }
@@ -341,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="site-header">
   <div class="header-inner">
     <a href="#hero" class="header-logo" aria-label="Hotel Fines Dolomites">
-      <img class="logo-img" src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/logo_1.png" alt="Hotel Fines Dolomites" />
+      <img class="logo-img" src="https://raw.githubusercontent.com/manusiri05/lp-fines-dolomites/main/assets/images/logo.jpeg" alt="Hotel Fines Dolomites" />
     </a>
     <nav class="header-nav">
       <a href="tel:+390472674200" class="header-tel">+39 0472 674 200</a>
@@ -374,7 +374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="hero-kw">Hotel Fines Dolomites in St. Magdalena &ndash; Ihre Unterkunft in Villnöss, Südtirol. Übernachten am Fuße der Geislerspitzen, im Naturpark Puez-Geisler, Eisacktal.</span>
     <div class="hero-cta-wrap">
       <a href="#bookingForm" class="btn-primary">Jetzt unverbindlich anfragen</a>
-      <a href="#rooms" class="btn-outline">Zimmer &amp; Preise</a>
+      <a href="#zimmer" class="btn-outline">Zimmer &amp; Preise</a>
     </div>
   </div>
   <div class="hero-scroll" aria-hidden="true">
@@ -449,7 +449,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── FEATURES ── -->
-<section id="features">
+<section id="restaurant">
   <div class="section-header fade-up">
     <span class="section-label">Warum Hotel Fines Dolomites</span>
     <h2 class="section-h2">Urlaub in den Dolomiten –<br>so erleben Sie ihn bei uns</h2>
@@ -500,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── RATINGS ── -->
-<section id="ratings">
+<section id="bewertungen">
   <div class="ratings-inner fade-up">
     <p class="ratings-label">Ausgezeichnet bewertet – von echten Gästen unseres Hotels in Villnöss</p>
     <div class="ratings-grid">
@@ -533,7 +533,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── ROOM SLIDER ── -->
-<section id="rooms">
+<section id="zimmer">
   <div class="section-header fade-up">
     <span class="section-label">Zimmer &amp; Unterkunft Villnöss</span>
     <h2 class="section-h2">Ihre Unterkunft in den<br>Dolomiten – fünf Kategorien</h2>
@@ -640,7 +640,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── EXPERIENCES ── -->
-<section id="experiences">
+<section id="erlebnisse">
   <div class="section-header fade-up">
     <span class="section-label">Aktivitäten &amp; Erlebnisse</span>
     <h2 class="section-h2">Villnöss &amp; die Dolomiten erleben –<br>Sommer wie Winter</h2>
@@ -708,7 +708,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── GALLERY ── -->
-<section id="gallery">
+<section id="impressionen">
   <div class="section-header fade-up">
     <span class="section-label">Impressionen</span>
     <h2 class="section-h2">Hotel Fines &amp; Villnöss –<br>in Bildern</h2>
@@ -748,7 +748,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ── CTA + FORM ── -->
-<section id="cta">
+<section id="anfrage">
   <div class="cta-inner fade-up">
     <span class="section-label" style="display:block;text-align:center;">Unverbindlich anfragen</span>
     <h2 class="cta-h2">Jetzt Zimmer im Hotel Villnöss<br>anfragen &amp; Urlaub sichern</h2>
@@ -786,7 +786,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="full-width">
           <label for="zimmer">Wunsch-Zimmer (optional)</label>
-          <select id="zimmer">
+          <select id="zimmerTyp">
             <option value="">-- Bitte wählen --</option>
             <option value="Doppelzimmer Odle">Doppelzimmer &bdquo;Odle&ldquo; (18&ndash;24 m², 2&ndash;3 Pers.)</option>
             <option value="Doppelzimmer Standard">Doppelzimmer Standard (16&ndash;18 m², 2 Pers.)</option>
@@ -871,10 +871,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="footer-col-title">Zimmer &amp; Anfrage</div>
         <div class="footer-links">
-          <a href="#rooms">Doppelzimmer &bdquo;Odle&ldquo;</a>
-          <a href="#rooms">Doppelzimmer Standard</a>
-          <a href="#rooms">Familienzimmer</a>
-          <a href="#rooms">Einzelzimmer &bdquo;Puez&ldquo;</a>
+          <a href="#zimmer">Doppelzimmer &bdquo;Odle&ldquo;</a>
+          <a href="#zimmer">Doppelzimmer Standard</a>
+          <a href="#zimmer">Familienzimmer</a>
+          <a href="#zimmer">Einzelzimmer &bdquo;Puez&ldquo;</a>
           <a href="#bookingForm">Jetzt anfragen</a>
         </div>
       </div>
@@ -980,7 +980,7 @@ document.addEventListener("DOMContentLoaded",function(){
     var kinder=parseInt(document.getElementById("kCount").value)||0,ages=[];
     for(var i=1;i<=kinder;i++){var v=document.querySelector("[name='alter_k"+i+"']");if(v&&v.value!=="")ages.push(v.value);}
     var utm=getUtm();
-    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmer").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
+    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmerTyp").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
     fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
     .then(function(r){return r.json();})
     .then(function(data){
